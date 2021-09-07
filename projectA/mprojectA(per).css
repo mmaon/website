@@ -1,0 +1,365 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+*{
+    box-sizing: border-box;
+    /* outline: 1px solid pink; */
+} 
+
+body{
+    min-width: 320px;    
+    background-color: #fef7eb;}
+.inner{
+    width: 95%;
+}
+ul,li { list-style: none; }
+a { 
+    color: rgb(49, 49, 49);
+    text-decoration: none; 
+}
+
+a:hover {
+    color: #8b8b8b;
+}
+
+header { 
+    width: 100%;
+    height: 60px;
+    
+}
+header.inner { 
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    margin-left: 108px;
+    width: 40%;
+    height: auto;
+}
+
+.icon {
+    width: 25%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.icon img {
+    width: 60%;
+    height: auto;
+}
+/* -----------------------헤더----------------------- */
+
+.menu a.on{
+    color: #8b8b8b;    
+}
+a:hover {
+    color: rgb(49, 49, 49);
+}
+.menu {
+    width: 80%;
+    height: 100vh;    
+    background: #fef7eb;
+    position: fixed;
+    /* 메뉴아이콘이 있는 상단부분까지 덮도록 픽스드로 지정*/
+    top: 0;
+    left: 0;
+    color: rgb(49, 49, 49);    
+    transition: all 1s; 
+    z-index: 10;          
+}
+
+.menu.on {
+    /* transform: translateX(0); */
+    transition: all 1s; 
+    /* 애니메이션효과주기*/
+}
+.topnav {    
+    display: flex;
+    margin: 20px 0 110px 20px;       
+    font-size: 10px;     
+}
+.topnav > div {
+    padding-top: 5px;
+
+}
+.menulogo {  
+    margin-left: 30px;
+    padding: 0;
+}
+
+.topnav div {
+    padding-right: 15px;    
+}
+
+.closeBT {
+    padding-left: 152px;    
+}
+.closeBT img {
+    width: 20px;
+    height: auto;
+}
+.menu1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px 0 0 40px;
+}
+.menu1 > li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* padding-bottom: 10px; */
+}
+.menu1 > li > a{
+    width: 100%;
+    height: 100%;    
+    font-size: 18px;
+    margin-bottom: 10px;   
+}
+
+ul.sub > li {
+    width: 240px;
+    font-size: 13px; 
+    margin: 0 0 10px 20px;    
+}
+/* ---------------------------메뉴--------------------------------- */
+
+section {
+    width: 100%;
+    height: auto;
+    text-align: center; 
+    color: rgb(49, 49, 49);          
+}
+
+section .subject {
+    width: 100%;
+    height: 7vh;    
+    font-size: 22px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e6e6e6;
+}
+.category {
+    width: 100%;
+    height: 11vh;
+    background-color: #c3c3c3; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tab li{ 
+    color: #434343;
+    transition: all 0.4s ease;
+}
+.tab li.active{    
+    transition: all 0.4s ease; 
+    color:#f0efef;
+}
+
+.category ul.tab {
+    width: 95%;
+    height: 2vh;
+    display: flex;    
+    justify-content: space-between;   
+    font-size: 15px; 
+    cursor: pointer;
+}
+.mal li.active{
+    transition: all 0.4s ease; 
+}
+.category ul.mal {
+    width: 97%;
+    font-size: 11px;
+    margin-top: 10px;
+    word-break: keep-all;
+}
+
+
+
+
+.snb {    
+    width: 100%;
+    height: auto;    
+}
+.snb .conbox.active{
+    transition: all 0.5s ease;
+}
+.pd div img {
+    width:  93%;
+    height: auto;
+}
+.conBox.active {
+    display: block;
+}
+.pd {
+    width: 100%;
+    height: 40vh;
+    display: flex;    
+    background-color: #e6e6e6;
+    margin-bottom: 150px;
+}
+
+
+.pd1 div img{
+    transform: scale(1);
+    transition: all 0.5s ease;
+  }
+.pd1 div:hover img{
+    transform: scale(1.03);
+    transition: all 0.5s ease;
+}
+.pd1 div:nth-child(1) {
+    padding-top: 12%;
+    width: 45%;
+} 
+.pd1 div:nth-child(2) {
+    width: 50%;
+} 
+
+
+.pd1 { width: 90%; }
+
+.pd1 div span {
+    display: flex; 
+    justify-content: center;   
+    font-size: 12px;  
+}
+.pd1 div span:nth-child(2),
+.pd2 div span:nth-child(2) {
+    margin: 15px 0;
+}
+
+
+.next {
+    width: 100%;
+    height: 35vh;
+    background-color: #e6e6e6;
+}
+
+.next2 {    
+    /* display: flex; */
+    align-items: center;    
+    width: 89%;
+    height: auto;   
+}
+
+.next2 div img {
+    width:  70%;
+    height: auto;
+}
+.next2 div:nth-child(2) {
+    text-align: left;
+    font-size: 13px;
+}
+.next2 .button{    
+    width: 14vh;
+    height: 10%;
+    line-height: 40px; 
+    margin-top: 20px;
+    border: 1px solid;     
+}
+.next2 div a:hover {
+    color: #8b8b8b;
+
+}
+
+.next2 div span {
+    display: flex;
+    justify-content: space-around;
+ 
+}
+
+/* -----------------------------메인-------------------------------- */
+
+footer {
+    width: 100%; 
+    height: 23vh;
+    background-color: #8b8b8b;
+        
+}
+
+footer div {
+    width: 100%;
+    height: auto;     
+    flex-direction: row;
+    font-family: 'Noto Sans KR', sans-serif; 
+    color: #dcdcdc;
+}
+ul.sns {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 190px;
+    display: flex;
+    flex-direction: row;    
+    padding-top: 10px;
+    justify-content: space-between;
+    height: auto;
+}
+ul.sns li img{
+    width: 18px;
+    height: 18px;
+}
+#content { display: flex; flex-direction: column; }
+    #first { 
+        order: 5;
+        display:  flex;
+        width: 95%;
+        height: auto;
+        justify-content: space-between;
+        border-top: 2px solid #c4c2c2;  
+        padding-top: 4px;
+    }
+    #second { order: 2; }
+    #third { order: 3; }
+    #fourth { order: 1; }
+    #fiveth { order: 4 }
+    
+.info {
+    width: 93%;
+    height: auto;
+    font-size: 10px; 
+    margin: 14px 0 0 0;
+    line-height: 17px;
+    text-align: center;    
+}
+.per {
+    width: 51%;
+    font-size: 11px;
+    margin: 15px;
+    text-align: center;
+    
+}
+.logo2 {    
+    font-size: 18px;
+    margin: -20px 0 0 8px;
+    
+}
+
+footer div.button{
+    width: 27%;
+    height: auto;
+    line-height: 30px;
+    font-size: 9px;
+    border:1px solid ;
+    background: #8b8b8b;
+    margin-top: 15px;    
+}
+footer .button a {
+    color: #e0dfdf;
+}
+
+footer .button a:hover {
+    color: #fff;
+}
+
+
+
+footer .button span:nth-child(1) {margin-right: 37px;}

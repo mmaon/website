@@ -1,0 +1,364 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid blue; */
+    
+}
+*[tabindex]:focus {
+    outline: none;
+}
+.inner{ 
+    width: 1600px; 
+    margin: auto; 
+}
+body{ 
+    min-width: 1608px; 
+    background-color: #fef7eb;
+}
+
+
+ul,li { list-style: none; }
+a { 
+    color: rgb(49, 49, 49);
+    text-decoration: none; 
+}
+
+a:hover {
+    color: #8b8b8b;
+}
+
+header { 
+    width: 100%;
+    height: 90px;    
+}
+header.inner { 
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    margin-left: 125px;
+    width: 115px;
+    height: auto;
+}
+.mlogo { display: none; }
+.menuBT img {
+    width: 32px;
+    height: auto;
+}
+.icon {
+    width: 150px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;    
+}
+.icon img {
+    width: 25px;
+    height: auto;
+}
+/* -----------------------헤더----------------------- */
+
+.menu a.on{
+    color: #8b8b8b;
+}
+.menu {
+    width: 540px;
+    height: 100vh;    
+    background: #fef7eb;
+    position: fixed;
+    /* 메뉴아이콘이 있는 상단부분까지 덮도록 픽스드로 지정*/
+    top: 0;
+    left: 0;   
+    transform: translateX(-100%);
+    transition: all 1s;
+    z-index: 1;           
+}
+.menu.on {
+    transform: translateX(0);
+    transition: all 1s; 
+    /* 애니메이션효과주기*/
+}
+.menu1 .sub li a:hover {
+    color: #8b8b8b;
+}
+.menulogo {
+    width: 150px;
+    height: auto;
+    padding: 0 0 30px 50px;
+}
+.topnav {    
+    display: flex;
+    margin: 30px 0 170px 30px;          
+    font-size: 14px; 
+    
+}
+.topnav div {
+    padding-right: 15px;    
+}
+
+.closeBT {
+    color: rgb(49, 49, 49);
+    padding-left: 300px;
+}
+.menu1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 25px 0 0 70px;
+    cursor: pointer;
+}
+.menu1 > li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+.menu1 > li > a{
+    width: 100%;
+    height: 100%;    
+    font-size: 23px;
+    margin-bottom: 13px;
+    /* position: relative; */
+    /* z-index: 100; */
+}
+
+ul.sub > li {
+    width: 220px;    
+    height: auto;
+    font-size: 18px; 
+    margin: 0 0 10px 16px;    
+}
+
+
+/* ---------------------------메뉴--------------------------------- */
+
+section {
+    width: 100%;
+    height: auto;
+    text-align: center; 
+    color: rgb(49, 49, 49);          
+}
+
+section .subject {
+    width: 100%;
+    height: 120px;    
+    font-size: 30px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e6e6e6;
+}
+.category {
+    width: 100%;
+    height: 120px;
+    background-color: #c3c3c3; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tab li{ 
+    color: #434343;
+    transition: all 0.4s ease;
+}
+.tab li.active{    
+    transition: all 0.4s ease; 
+    color:#f0efef;
+}
+
+.category ul.tab {
+    width: 700px;
+    height: 30px;
+    display: flex;    
+    justify-content: space-between;   
+    font-size: 20px;  
+    font-family: 'Noto Sans KR', sans-serif; 
+    cursor: pointer;
+}
+.mal li.active{
+    transition: all 0.4s ease; 
+}
+.category ul.mal {
+    width: 1130px;
+    height: 50px;
+    font-size: 17px;
+    margin-top: 10px;
+    word-break: keep-all;
+}
+
+
+
+
+.snb {    
+    width: 100%;
+    height: auto;    
+}
+
+
+.snb .conbox.active{
+    transition: all 0.5s ease;
+}
+.conBox {
+    display: none;
+}
+.mal li.active {
+    transition: all 0.4s ease; 
+}
+.conBox.active {
+    display: block;
+}
+
+
+
+
+.pd div img {
+    width:  350px;
+    height: auto;
+}
+.pd {
+    width: 100%;
+    height: 660px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e6e6;
+    margin-bottom: 150px;
+}
+
+
+.pd1 div img{
+    transform: scale(1);
+    transition: all 0.5s ease;
+  }
+.pd1 div:hover img {
+    transform: scale(1.03);
+    transition: all 0.5s ease;
+}
+.pd1 div:nth-child(1) {
+    padding-top: 55px;
+} 
+
+
+.pd1,
+
+.next2 {
+    display: flex; 
+    justify-content: space-around;        
+}
+.pd1 { width: 1000px; }
+
+.pd1 div span {
+    display: flex; 
+    justify-content: center;     
+}
+.pd1 div span:nth-child(2) {
+    margin: 15px 0;
+}
+
+.snb div .bb div img {
+    width: 470px;
+}
+
+.next {
+    width: 100%;
+    height: 500px;
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.next2 {    
+    display: flex;
+    align-items: center;    
+    width: 550px;
+    height: 350px;
+}
+.next2 div img {
+    width: 280px;
+}
+.next2 div:nth-child(2) {
+    text-align: left;
+}
+.next2 .button{    
+    width: 200px;
+    height: 50px;
+    line-height: 48px; 
+    margin-top: 40px;
+    border: 1px solid rgb(49, 49, 49);     
+}
+
+.next2 div span {
+    display: flex;
+    justify-content: space-around;
+ 
+}
+
+/* -----------------------------메인-------------------------------- */
+
+footer {
+    width: 100%; 
+    height: 250px;
+    background-color: #8b8b8b; 
+    font-family: 'Noto Sans KR', sans-serif;  
+    margin-top: 200px; 
+    
+}
+footer div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #dcdcdc;
+    text-align: center;    
+}
+
+.logo2 {
+    font-size: 33px;
+    margin: 0 300px 0 150px;           
+}
+
+ul.sns {
+    position: fixed;
+    top: 40%;
+    right: 55px;
+    width: 25px;
+    display: flex;
+    flex-direction: column; 
+}
+ul.sns li a img{
+    position: relative;
+    margin-bottom: 20px;   
+}
+.info {
+    width: 600px; 
+    height: 200px;
+    margin-right: 150px;
+    line-height: 30px;
+    margin-top: 40px;
+    text-align: center;
+    
+}
+.per {
+    width: 300px; 
+    height: auto;
+    margin-right: 20px;
+}
+footer .button{
+    width: 180px;
+    height: 47px;
+    line-height: 45px;
+    display: block;
+    border: 1px solid #dcdcdc;
+    background: #8b8b8b;    
+
+}
+
+footer .button span:nth-child(1) {margin-right: 55px;}

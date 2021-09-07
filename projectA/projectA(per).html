@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesop</title>
+    <link rel="stylesheet" type="text/css" href="projectA(per).css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" href="mprojectA(per).css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="projectA(per).js"></script>
+</head>
+
+<body>
+    <header class="inner">
+        <a href="#" class="menuBT"><img src="image/menu.png" alt="메뉴"></a>
+        <a href="projectA.html"><img src="image/logoho.png" alt=로고 class="logo"></a>
+        <div class="icon">
+            <a href="#"><img src="image/account.png" alt=계정></a>
+            <a href="#"><img src="image/search.png" alt=검색></a>
+            <a href="#"><img src="image/language.png" alt=언어></a>
+            <a href="#"><img src="image/cart.png" alt=카트></a>
+        </div>
+    </header>
+
+    <div class="menu">
+        <div class="topnav">
+            <div><a href="#">제품보기</a></div>
+            <div><a href="#">읽기</a></div>
+            <div><a href="#">스토어</a></div>
+            <a href="#" class="closeBT"><img src="image/close.png" alt="X"></a>
+        </div>
+        <a href="#"><img src="image/logoho.png" alt=Aesop class="menulogo"></a>
+        <ul class="menu1">
+            <li><a href="#">향수</a>
+                <ul class="sub">
+                    <li><a href="projectA(per).html#tag1">로즈</a></li>
+                    <li><a href="projectA(per).html#tag2">휠</a></li>
+                    <li><a href="projectA(per).html#tag3">마라케시</a></li>
+                    <li><a href="projectA(per).html#tag4">테싯</a></li>
+                    <li><a href="projectA(per).html#tag5">에라미아</a></li>
+                    <li><a href="projectA(per).html#tag6">카르스트</a></li>
+                    <li><a href="projectA(per).html#tag7">미라세티</a></li>
+                </ul>
+            </li>
+            <li><a href="#">바디　&　핸드</a>
+                <ul class="sub">
+                    <li><a href="projectA(b,h).html#tag8">핸드</a></li>
+                    <li><a href="projectA(b,h).html#tag9">바디</a></li>                    
+                    <li><a href="projectA(b,h).html#tag10">핸드 및 바디 케어 기프트</a></li>
+                    <li><a href="projectA(b,h).html#tag11">번들</a></li>
+                </ul>
+            </li>
+            <li><a href="#">홈</a>
+                <ul class="sub">
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#">홈 케어 기프트</a></li>
+                    <li><a href="#">문학</a></li>
+                </ul>
+            </li>
+            <li><a href="#">스킨</a>
+                <ul class="sub">
+                    <li><a href="#">기초</a></li>
+                    <li><a href="#">스킨케어</a></li>
+                    <li><a href="#">키트</a></li>
+                    <li><a href="#">스킨 케어 기프트</a></li>
+                </ul>
+            </li>
+            <li><a href="#">헤어</a>
+                <ul class="sub">
+                    <li><a href="#">샴푸</a></li>
+                    <li><a href="#">컨디셔너</a></li>
+                    <li><a href="#">트리트먼트</a></li>
+                    <li><a href="#">그루밍</a></li>
+                </ul>
+            </li>
+            <li><a href="#">키트　&　여행제품</a>
+                <ul class="sub">
+                    <li><a href="#">페이스</a></li>
+                    <li><a href="#">바디 & 핸드</a></li>
+                    <li><a href="#">여행</a></li>
+                    <li><a href="#">시즈널 기프트 카드</a></li>
+                </ul>
+            </li>
+            <li><a href="#">기프트 가이드</a>
+                <ul class="sub">
+                    <li><a href="#">이솝 인기상품</a></li>
+                    <li><a href="#">기프트 번들</a></li>
+                    <li><a href="#">나를 위한 기프트</a></li>
+                    <li><a href="#">홈 케어 기프트</a></li>
+                    <li><a href="#">트래블 기프트</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <section>
+        <div class="subject">
+            <span>향수</span>
+        </div>
+        <div class="category">
+            <ul class="tab">
+                <li rel="tab1" class="active" id="tag1">로즈</li>
+                <li rel="tab2" id="tag2">휠</li>
+                <li rel="tab3" id="tag3">마라케시</li>
+                <li rel="tab4" id="tag4">테싯</li>
+                <li rel="tab5" id="tag5">에레미아</li>
+                <li rel="tab6" id="tag6">카르스트</li>
+                <li rel="tab7" id="tag7">미라세티</li>
+            </ul>
+            <ul class="mal">
+                <li data-id="tab1" class="conBox active">
+                    로즈는 그린, 우디, 가벼운 스모크 노트를 기반으로 로즈의 전반적인 생명주기를 표현합니다.
+                    플로럴 계열이지만 미묘하고 풍성한 향이 특징입니다. 모더니스트 디자이너 샬로트 페리앙의 삶과 일, 그리고 열정에서 영감을 받았습니다.
+                </li>
+                <li data-id="tab2" class="conBox">
+                    풍부한 스파이스, 스모키 우드, 짙은 그린이 조화를 이룬 향이 일본의 숲을 방불케 합니다.
+                </li>
+                <li data-id="tab3" class="conBox">
+                    매혹적인 도시 모로코의 마라케시에서 영감을 받은 이 향은 마라케시 전통요리에 사용되는 향신료의 아름다운 아로마와 그들의 시장, 주변 사막에서 보이는 강렬한 색감
+                    그리고 모로코 전통의 특징이라 할 수 있는 따뜻한 환대의 문화에서 영감을 얻어 탄생하였습니다.
+                </li>
+                <li data-id="tab4" class="conBox">
+                    상쾌하고 활력 넘치는 탑 노트와 스파이시한 언더톤이 어우러지는 현대적 느낌을 풍기는 남녀 공용 향수입니다.
+                </li>
+                <li data-id="tab5" class="conBox">
+                    에레미아는 잊혀진 황무지를 연상시킵니다. 상큼하고 활기찬 노트가 펼쳐지고 뒤이어 머스키하고 이끼의 그린 언더톤이 내려앉습니다.
+                </li>
+                <li data-id="tab6" class="conBox">
+                    카르스트는 저 멀리 보이는 바위투성이 해안가에 도달했음을 알리는 신호입니다.
+                    상쾌한 허브 노트가 해안가의 마린 향과 은은한 스모키의 언더톤으로 이어집니다.
+                </li>
+                <li data-id="tab7" class="conBox">
+                    미라세티는 험난한 바다를 항해하는 낡은 배를 떠오르게 합니다.
+                    스파이시한 탑 노트가 따뜻한 발사믹, 우드 향, 위스키로 가득한 지하 저장고에서 나는 희미한 머스크 향과 어우러집니다.
+                </li>
+            </ul>
+        </div>
+
+        <div class="snb">
+            <!-----------------로즈---------------------->
+            <div id="tab1" class="conBox active">
+                <div class="pd">
+                    <div class="pd1">
+                        <div>
+                            <a href="rose.html">
+                                <img src="product/1.rose.webp" alt="제품">
+                                <span>로즈 오 드 퍼퓸</span>
+                                <span>50 mL / ￦ 180,000</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="roseang.html">
+                                <img src="product/2.roseang.webp" alt="제품">
+                                <span>로즈 앙상블</span>
+                                <span>￦ 230,000</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="next">
+                    <div class="next2">
+                        <div><img src="product/5.mara.webp" alt="제품"></div>
+                        <div>다음 단계
+                            <a href="wheel.html">
+                                <span class="button">
+                                    <span>휠</span>
+                                    <span>→</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-----------------휠-------------------- -->
+            <div id="tab2" class="conBox">
+                <div class="pd">
+                    <div class="pd1">
+                        <div>
+                            <a href="wheel.html">
+                                <img src="product/3.wheel.webp" alt="제품">
+                                <span>휠 오 드 퍼퓸</span>
+                                <span>50 mL / ￦ 140,000</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="wheelang.html">
+                                <img src="product/4.wheelang.webp" alt="제품">
+                                <span>휠 앙상블</span>
+                                <span>￦ 216,000</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="next">
+                    <div class="next2">
+                        <div><img src="product/5.mara.webp" alt="제품"></div>
+                        <div>다음 단계
+                            <a href="mara.html">
+                                <span class="button">
+                                    <span>마라케시</span>
+                                    <span>→</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ---------------마라케시------------------- -->
+            <div id="tab3" class="conBox">
+                <div class="pd">
+                    <div class="pd1">
+                        <div>
+                            <a href="mara.html">
+                                <img src="product/5.mara.webp" alt="제품">
+                                <span>마라케시 오 드 퍼퓸</span>
+                                <span>50 mL / ￦ 140,500</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="maraang.html">
+                                <img src="product/6.maraang.webp" alt="제품">
+                                <span>마라케시 인텐스 앙상블</span>
+                                <span>￦ 165,000</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="next">
+                    <div class="next2">
+                        <div><img src="product/7.tacit.webp" alt="제품"></div>
+                        <div>다음 단계
+                            <a href="#">
+                                <span class="button">
+                                    <span>테싯</span>
+                                    <span>→</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ---------------테싯------------------- -->
+            <div id="tab4" class="conBox">
+                <div class="pd">
+                    <div class="pd1">
+                        <div><a href="#"><img src="product/7.tacit.webp" alt="제품">
+                                <span>테싯 오 드 퍼퓸</span>
+                                <span>50 mL / ￦ 130,000</span>
+                            </a>
+                        </div>
+                        <div><a href="#"><img src="product/8.tacitang.webp" alt="제품">
+                                <span>테싯 앙상블</span>
+                                <span>￦ 185,000</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="next">
+                    <div class="next2">
+                        <div><img src="product/9.eremia.webp" alt="제품"></div>
+                        <div>다음 단계
+                            <a href="#">
+                                <span class="button">
+                                    <span>에레미아</span>
+                                    <span>→</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ---------------에레미아---------------------->
+            <div id="tab5" class="conBox">
+                <div class="pd">
+                    <div class="pd1">
+                        <div><a href="#"><img src="product/9.eremia.webp" alt="제품">
+                                <span>에레미아 오 드 퍼퓸</span>
+                                <span>50 mL / ￦ 210,000</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="next">
+                    <div class="next2">
+                        <div><img src="product/5.mara.webp" alt="제품"></div>
+                        <div>다음 단계
+                            <a href="#">
+                                <span class="button">
+                                    <span>카르스트</span>
+                                    <span>→</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ---------------카르스트---------------------->
+            <div id="tab6" class="conBox">
+                <div class="pd">
+                    <div class="pd1">
+                        <div>
+                            <a href="#">
+                                <img src="product/10.karst.webp" alt="제품">
+                                <span>카르스트 오 드 퍼퓸</span>
+                                <span>50 mL / ￦ 210,000</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="next">
+                    <div class="next2">
+                        <div><img src="product/11.miraceti.webp" alt="제품"></div>
+                        <div>다음 단계
+                            <a href="#">
+                                <span class="button">
+                                    <span>미라세티</span>
+                                    <span>→</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ---------------미라세티---------------------->
+            <div id="tab7" class="conBox">
+                <div class="pd">
+                    <div class="pd1">
+                        <div>
+                            <a href="#">
+                                <img src="product/11.miraceti.webp" alt="제품">
+                                <span>미라세티 오 드 퍼퓸</span>
+                                <span>50 mL / ￦ 210,000</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="next">
+                    <div class="next2">
+                        <div><img src="product/body7.bathroom.webp" alt="제품"></div>
+                        <div>다음 단계
+                            <a href="#">
+                                <span class="button">
+                                    <span>바디 & 핸드</span>
+                                    <span>→</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div id="content">
+            <div id="first">
+                <div class="logo2">ⓒAesop</div>
+                <ul class="sns">
+                    <li><a class="Hyperlink-module_base__uoaww Hyperlink-module_hasIcon__1893y Hyperlink-module_hasExternalIcon__
+            2reUG Hyperlink-module_left__3BZhR Hyperlink-module_light__6lcpR FooterBlock_listItem__2cWAS" data-test-ref="FOOTER_LINK" href="https://www.instagram.com/aesopskincare/" target="_blank" title="Instagram">
+                            <img src="image/instagram.png" alt=인스타그램></a></li>
+
+                    <li><a class="Hyperlink-module_base__uoaww Hyperlink-module_hasIcon__1893y Hyperlink-module_hasExternalIcon__
+            2reUG Hyperlink-module_left__3BZhR Hyperlink-module_light__6lcpR FooterBlock_listItem__2cWAS" data-test-ref="FOOTER_LINK" href="https://twitter.com/aesopskincare" target="_blank" title="Twitter">
+                            <img src="image/twitter.png" alt=트위터></a></li>
+
+                    <li><a class="Hyperlink-module_base__uoaww Hyperlink-module_hasIcon__1893y Hyperlink-module_hasExternalIcon__
+            2reUG Hyperlink-module_left__3BZhR Hyperlink-module_light__6lcpR FooterBlock_listItem__2cWAS" data-test-ref="FOOTER_LINK" href="https://www.linkedin.com/company/aesop" target="_blank" title="LinkedIn"><img src="image/likedin.png" alt=라이크딘></a></li>
+
+                    <li><a class="Hyperlink-module_base__uoaww Hyperlink-module_hasIcon__1893y Hyperlink-module_hasExternalIcon__2reUG Hyperlink-module_left__
+            3BZhR Hyperlink-module_light__6lcpR FooterBlock_listItem__2cWAS" data-test-ref="FOOTER_LINK" href="http://pf.kakao.com/_BxdYjT" target="_blank" title="Kakao Plus Friend"><img src="image/kakao+.png" alt=카카오친구></a></li>
+                </ul>
+            </div>
+            <div id="second" class="info">
+                상호: 이솝코리아 유한회사 | 주소: 서울특별시 강남구 선릉로 162길 3 이솝코리아 3층<br>
+                대표자: 마이클안토니오키프 | 대표전화: 1800-1987 | 대표 이메일: aesop@aesop.com<br>
+                호스팅 사업자: SAP Hybris | 사업자 등록 번호: 220-88-56014<br>
+                통신판매업 신고번호: 2014-서울강남-02300
+            </div>
+            <div id="third" class="per">개인정보 처리방침 | 주문 및 지원 | 이용 약관</div>
+            <div id="fourth" class="button">
+                <span>이메일 주소</span>
+                <span>v</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
