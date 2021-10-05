@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700,900');
+
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    /* 메인 */
+    font-family: 'ghanachoco';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ghanachoco.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SeoulHangangM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+html {
+    overflow: hidden;
+}
+
+html,
+body {
+    display: block;
+    min-width: 400px;     
+    margin: auto;
+ 
+}
+.section {
+    width: 100%;
+    height: 653px;
+}
+#section1 {
+    font-family: 'ghanachoco';
+    width: 100%;
+    height: 653px;
+
+}
+.container {
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    top: 50%;
+    left: 17%;
+    display: block;
+    position: absolute;
+    max-width: 225px;
+    /* color: #fff; */
+    text-transform: uppercase;
+    font-size: 4.5em;
+    margin: 0;
+    line-height: 70px;
+    letter-spacing: 2px;
+}
+.container span {
+    transform: skew(-10deg);
+    display: block;
+    float: left;
+    width: 705px;
+    position: relative;
+}
+
+
